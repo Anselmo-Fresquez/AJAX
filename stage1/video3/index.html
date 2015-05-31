@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css">
+  <title>AJAX with JavaScript</title>
+  <script>
+    // Vars
+    var xhr = new XMLHttpRequest();
+    const xhr_RequestNotInitialized = 0;
+    const xhr_ServerConnectionEstablished = 1;
+    const xhr_RequestReceived = 2;
+    const xhr_ProcessingRequest = 3;
+    const xhr_RequestFinishedResponseReady = 4;
+    
+    // Functions
+    function XHRReadyStateHasChanged() {
+      switch (xhr.readyState) {
+        case xhr_RequestNotInitialized:
+          break;
+        case xhr_ServerConnectionEstablished:
+          break;
+        case xhr_RequestReceived:
+          break;
+        case xhr_ProcessingRequest:
+          break;
+        case xhr_RequestFinishedResponseReady:
+          break;
+      }
+    }
+    
+    // Events
+    xhr.onreadystatechange = XHRReadyStateHasChanged;
+  </script>
+</head>
+<body>
+  <div class="grid-container centered">
+    <div class="grid-100">
+      <div class="contained">
+        <div class="grid-100">
+          <div class="heading">
+            <h1>Bring on the AJAX</h1>
+          </div>
+          <ul id="ajax">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
